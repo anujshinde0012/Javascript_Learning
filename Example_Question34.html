@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Example Question 34
+        </title>
+    </head>
+    <body>
+        <input placeholder="Enter your name" class="userInput">
+        <button onclick="submit()"> Submit </button>
+
+        <p class="textStatement"></p>
+
+        <script>
+            function submit()
+            {
+                const input = document.querySelector('.userInput');
+                const text = `Your name is ${input.value}.`;
+
+                document.querySelector('.textStatement').innerHTML = text;
+            }
+        </script>
+    </body>
+</html>

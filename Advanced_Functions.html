@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Advanced Functions
+    </title>
+</head>
+
+<body>
+    <script>
+        function greeting() {
+            console.log("hello");
+        }
+        greeting();
+
+        const function2 = function () {
+            console.log('Hello Mama');
+        };
+        // Anonymous function - with no name
+
+        console.log(function2);
+        function2();
+
+        const object = {
+            num: 12,
+            name: 'Anuj',
+            func: function () { //Anonymous function
+                console.log('hello dada');
+            }
+        }
+        object.func(); // Function saved inside the object.
+
+        function display(param) {
+            console.log(param);
+        }
+        display(2); //Passing value into a function.
+        // Inside the function param, 2 is saved.
+
+        function run(param) {
+            param();
+        }
+        run(function() {
+            console.log('hello again');
+        });
+
+        setTimeout(function() {
+            console.log('time out');
+        }, 3000); //Built-in function 
+        // Here 3000 is in millisecond and iot is used to tell that after how much time the function will run.
+        
+        console.log('next line');
+
+        setInterval(function() {
+            console.log('interval');
+        }, 3000);
+
+         // Both are same function, works same too.
+        const regularFunction = function(param, param2) {
+            console.log('hello');
+            return 4;
+        }
+        const arrowFunction = (param, param2) => {
+            console.log('hello');
+            return 4;
+        };
+        arrowFunction();
+
+        const oneParam = param => {
+            console.log(param + 1);
+        };
+        oneParam(34);
+
+        const oneLine = () => {return 34 + 90;};
+        // const oneLine = () => return 34 + 90;
+        // const oneLine = () => 34 + 90;
+        console.log(oneLine());
+    </script>
+</body>
+
+</html>

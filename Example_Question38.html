@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>
+            Example Question 38
+        </title>
+    </head>
+    <body>
+       <script>
+        function getSwap(array) {
+            let lastIndex = array.length - 1;
+            [array[0], array[lastIndex]] = [array[lastIndex], array[0]];
+            console.log(array);
+        }
+        getSwap([12, 34, 56, 789, 90, 44]);
+        getSwap(['Hi', 'Anuj', 'I', 'Santa Claus']);
+       </script> 
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<html> 
+
+    <head>
+
+        <title>
+            Example Question 16
+        </title>
+
+    </head>
+
+    <body>
+        <p>
+            Cart Quantity
+        </p>
+
+        <button
+        onclick="console.log(`Cart Quantity: ${cartq}`);">
+            Show Quantity
+        </button>
+
+        <button
+        onclick = "cartq = cartq + 1;
+        // cartq += 1;
+        // cartq++;
+        console.log(`Cart Quantity: ${cartq}`);">
+            Add to Cart
+        </button>
+
+        <button
+        onclick = "cartq = cartq + 2;
+        // cartq += 2;
+        console.log(`Cart Quantity: ${cartq}`);">
+            +2
+        </button>
+
+        <button
+        onclick = "cartq = cartq + 3;
+        // cartq += 3;
+        console.log(`Cart Quantity: ${cartq}`);">
+            +3
+        </button>
+
+        <button
+        onclick = "cartq = 0;
+        console.log('Cart was reset.');
+        console.log(`Cart Quantity: ${cartq}`);">
+            Reset Cart
+        </button>
+
+        <button
+        onclick = "cartq += 4;
+        console.log(`Cart Quantity: ${cartq}`);">
+            +4
+        </button>
+
+        <button
+        onclick = "cartq += 5;
+        console.log(`Cart Quantity: ${cartq}`);">
+            +5
+        </button>
+
+        <button
+        onclick = "cartq--;
+        console.log(`Cart Quantity: ${cartq}`);">
+            Remove from cart
+        </button>
+
+         <button
+        onclick = "cartq = cartq - 2;
+        console.log(`Cart Quantity: ${cartq}`);">
+            -2
+        </button>
+
+         <button
+        onclick = "cartq = cartq - 3;
+        console.log(`Cart Quantity: ${cartq}`);">
+            -3
+        </button>
+
+        <script>
+            let cartq = 0;
+
+        </script>
+    </body>
+</html>

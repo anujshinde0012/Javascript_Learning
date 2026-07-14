@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            Document Object Model
+        </title>
+    </head>
+    <body>
+        <button>
+            Hello
+        </button>
+
+        <button class="Button-abc">
+            Hii
+        </button>
+        <script>
+            //                       ---METHODS OF DOM---
+            console.log(document.querySelector("button")); // <button> Hello </button>
+            document.querySelector("button")
+                .innerHTML = "Hello2";
+
+            // For Second button to convert the html code in javascript code, we need:
+            console.log(document.querySelector(".Button-abc")); // That "." is very important before the name of the class of the button tag.
+
+            /*                       ---PROPERTIES OF DOM---
+            document.body.innerHTML = "Hello"; 
+            // We can now set the content present in the body section as string "Hello".
+            // Also innerHTML will give all the html present in the body section of the code.
+            
+            document.title = "Anuj Shinde"; 
+            // The title named as Document Object Model will now get changed to "Anuj Shinde", acts just like the object and its properties.
+
+            console.log(document.body);
+            // We can access all the html code present in the body section.
+
+            document.body.innerHTML = "Good Morning";
+            // It will replace all the html code in the body section by a string "Good Morning".
+
+            document.body.innerHTML = "<button>Good Job!</button>";
+            console.log(document.body.innerHTML);
+            */
+        </script>
+    </body>
+</html>

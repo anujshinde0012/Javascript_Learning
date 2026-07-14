@@ -1,0 +1,71 @@
+<html>
+
+<Head>
+    <title> Ultimate Document Object Model Project 1 </title>
+    <link rel="stylesheet" href="Styles/DOM_Ultimate_Project.css">
+</Head>
+
+<body>
+    <!--YouTube Button Project--->
+    <p> YouTube Subscribe Button </p>
+
+    <button onclick="subscribe()" class="subscribe-button styleButton1"> Subscribe </button>
+
+    <!--Amazon Bill Calculation Project--->
+    <p> Amazon Shipping Calculator </p>
+    <p> Orders under $40 = +$10 shipping. </p>
+    <p> Orders over $40 = FREE shipping. </p>
+
+    <input placeholder="Cost of order" class="userInput calButton" onkeydown="console.log(event.key); // Prints the key typed in the console
+        if(event.key === 'Enter')
+        {
+            calculate();
+        }">
+
+    <button onclick="calculate()" class="calStyle">
+        Calculate </button>
+
+    <p class="totalCost"></p>
+
+    <!--Rock Paper Scissors Project--->
+    <p>
+        Rock Paper Scissors
+    </p>
+
+    <button class="b1" onclick="
+    Rock();
+    ">
+        Rock
+    </button>
+
+    <button class="b2" onclick="
+    paper();
+    ">
+        Paper
+    </button>
+
+    <button class="b3" onclick="
+    scissors();
+    ">
+        Scissors
+    </button>
+
+    <p class="newScore"></p>
+
+    <button class="b4" onclick=" 
+    score.wins = 0;
+    score.losses = 0;
+    score.tie = 0;
+    newScore();
+    alert('Scores got reset.');">
+        Reset Score
+    </button>
+
+    <p class="result"></p>
+    <p class="moves"></p>
+
+
+    <script> src = "Scripts/DOM_Ultimate_Project.js" </script>
+</body>
+
+</html>

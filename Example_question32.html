@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>
+        Example Question 31
+    </title>
+</head>
+
+<body>
+    <button class="a9_button"> 9a </button>
+    <button class="b9_button" onclick="updateSecondButton()"> 9b </button>
+
+    <script>
+        const a = document.querySelector('.a9_button');
+        console.log(a);
+
+        function updateSecondButton() {
+            document.querySelector('.b9_button')
+                .innerHTML = '9b done!';
+        }
+    </script>
+</body>
+
+</html>

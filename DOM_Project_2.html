@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>
+        Document Object Model Ultimate Project
+    </title>
+</head>
+
+<body>
+    <p> Amazon Shipping Calculator </p>
+    <p> Orders under $40 = +$10 shipping. </p>
+    <p> Orders over $40 = FREE shipping. </p>
+
+    <input placeholder="Cost of order" class="userInput" onkeydown="console.log(event.key); // Prints the key typed in the console
+        if(event.key === 'Enter')
+        {
+            calculate();
+        }">
+
+    <button onclick="calculate()">
+        Calculate </button>
+
+    <p class="totalCost"></p>
+
+    <script>
+        function calculate() {
+            const element = document.querySelector(".userInput");
+            let cost = Number(element.value);
+
+            if (cost < 40) {
+                cost += 10;
+            }
+
+            document.querySelector(".totalCost")
+                .innerHTML = `${cost}`;
+        }
+
+    </script>
+</body>
+</html>

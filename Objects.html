@@ -1,0 +1,88 @@
+<!--OBJECTS SUCH AS CONSOLE.LOG AND MATH.RANDOM ARE THE BUILD-IN OBJECTS.-->
+<!DOCTYPE html>
+<html>
+    <Head>
+        <title>
+            Objects
+        </title>
+    </Head>
+    <body>
+        <script>
+            const item1 = {  //Object is being created.
+                name: "Socks",
+                price: 230
+            };
+
+            console.log(item1.name);
+            console.log(item1.price); // DOT NOTATION used to print the value of the properties in the object.
+            console.log(item1);
+
+            item1.name = "Pen";
+            item1.price = 45;
+            console.log(item1);
+
+            const item2 = {
+                name: "shirt",
+                ratings: { // NESTED OBJECT 
+                    stars: 4.8,
+                    count: 5
+                },
+                fun: function greet() // FUNCTION INSIDE AN OBJECT
+                {
+                    console.log("Hello, good morning.");
+                }
+            };
+
+            console.log(item2);
+            console.log(item2.name);
+            console.log(item2["name"]); // BRACKET NOTATION used to print the value of the properties in the object.
+            console.log(item2.ratings.stars) // DOT NOTATION FOR NESTED OBJECTS
+
+            console.log(item2.fun); // DOT NOTATION FOR A FUNCTION IN AN OBJECT
+            item2.fun(); // CALLING THE FUNCTION INSIDE THE OBJECT
+
+            /* SAME AS CONSOLE.LOG WHERE CONSOPLE.LOG IS A METHOD BUT CONSOLE IS AN OBJECT AND LOG IS ITS VALUE OR PROPERTY 
+            SAVED AS A FUNCTION IN AN OBJECT SUCH AS 
+            CONST CONSOLE = 
+            {
+                LOG: FUNCTION LOG1()
+                {
+                    CONSOLE.LOG("HELLO");
+                }
+            }; 
+            AND WHEN WE WANT TO PRINT THE CONSOLE OBJECT, WE DO IT LIKEWISE: 
+            CONSOLE.LOG();
+            ANOTHER ACCURATE EXAMPLE WE HAVE FOR AN OBJECT AND A FUNCTION IN IT IS MATH.RANDOM() */
+
+            console.log(typeof console.log);
+            console.log(typeof Math.round);
+            console.log(JSON.stringify(item2)); //  CONVERTING JSCRIPT OBJECT INTO JSON BY USING STRINGIFY FUNCTION IN JSON OBJECT.
+            //  Function greet() is not in the JSON object as it does not supports a function in an object.
+
+            const convertJsonToJS = JSON.stringify(item2);
+            console.log(JSON.parse(convertJsonToJS));
+            // CONVERTING A JSON OBJECT BACK TO A JSCRIPT OBJECT USING PAR5E FUNCTION IN THE JSON OBJECT.
+            // We will get the function greet() back as jscript supports the function in the object.
+
+            console.log("Hello".length);
+            console.log("hello".toUpperCase); // AUTO-BOXING in objects for strings 
+
+            const obj1 = {
+                message: "Hello"
+            };
+            console.log(obj1);
+
+            const obj2 = obj1; // Copy By Reffernce
+            console.log(obj2);
+
+            const item = {
+                message: "Thank You!",
+                price: 434
+            }
+
+            const { message, price } = item;
+            console.log(message); // Destructuring Shortcut 
+            console.log(price);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+
+<Head>
+    <title> Ultimate Document Object Model Project 1 </title>
+</Head>
+
+<body>
+    <p> YouTube Subscribe Button </p>
+
+    <button onclick="subscribe()" class="subscribe-button"> Subscribe </button>
+
+    <script>
+        function subscribe() {
+            const b1 = document.querySelector('.subscribe-button');
+            if (b1.innerText === 'Subscribe') {
+                b1.innerHTML = 'Subscribed';
+            }
+            else {
+                b1.innerHTML = 'Subscribe';
+            }
+        }
+
+    </script>
+</body>
+
+</html>

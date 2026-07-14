@@ -1,0 +1,43 @@
+body {
+            font-family: Arial;
+        }
+
+        .styleButton1 {
+            border: none;
+            background: black;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 15px;
+            padding-left: 15px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+
+        .isSubscribed {
+            background-color: rgb(240, 240, 240);
+            color: black;
+        }
+
+        .calButton {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            /*Best way to set the same values to padding is:- padding:15px 10px; */
+            font-size: 15px;
+        }
+
+        .calStyle {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font: 15px;
+        }

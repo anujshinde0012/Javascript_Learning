@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Example Question 29
+        </title>
+    </head>
+    <body>
+        <script>
+            function convert(degree, unit)
+            {
+                if(unit == 'F' || unit == 'f')
+                {
+                    celcius = (degree - 32) * 5/9;
+                    return celcius;
+                }
+                else if(unit == 'C' || unit == 'c')
+                {
+                    farheneit = (degree * 9/5) + 32;
+                    return farheneit;
+                }
+            }
+
+            const r1 = convert(25, 'C');
+            console.log(`convertTemperature(25, 'C') => '${r1}F'`);
+            const r2 = convert(86, 'F');
+            console.log(`convertTemperature(86, 'F') => '${r2}C'`);
+            
+        </script>
+    </body>
+</html>
